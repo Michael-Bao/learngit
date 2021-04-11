@@ -4,3 +4,7 @@ git status  //查看当前是否有为提交的修改
 git diff    //查看修改了哪些
 git log     //查看版本的历史记录
 git log --pretty=oneline  //查看历史记录的简洁
+git reset --hard HEAD^    //回退到上一个版本
+git reset --hard commit_id//回退到某个版本，commit_id  表示版本id，只需要前前面几位就好
+git reflog  //查看每一条记录，避免执行 reset 之后，想恢复原本最新的版本时，找不到版本号，而 git reflog 可以记录每一条操作
+git 
