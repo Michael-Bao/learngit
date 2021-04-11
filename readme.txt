@@ -65,7 +65,7 @@ git commit -m "解决冲突" //合并成功
 git log --graph --pretty=oneline --abbrev-commit //查看合并图；--pretty=oneline 展示更多；--abbrev-commit 缩写。
 
 //禁用 fast forward
-// 
+//  1
 //
 
 
