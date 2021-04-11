@@ -12,8 +12,8 @@ git reflog  //查看每一条记录，避免执行 reset 之后，想恢复原�
 git checkout -- readme.txt // 将 readme 文件撤销回最近一次 git add 或 git commit 时的状态。未提到暂存就恢复成版本库，已提交到暂存区，就恢复成暂存区。
 git checkout -- <file> //表示撤销修改,若没有 -- 就是切换到另一个分支
 
-感受 git checkout -- <file> 
-和 git reset HEAD <file>
+git reset HEAD <file>  //把暂存区的修改回退到工作区
+
  
 
 
