@@ -27,11 +27,28 @@ git remote add <remote-name> <remote-address> //添加远程仓库的地址
 
 // 推送到远程库
 git push -u origin master
-git push -u <remote-name> <remote-address> //由于远程库是空的，第一次推送 master 加上 -u，还能起到本地和远程的 master 关联起来的作用，后续就无需加 -u，还能起到本地和远程的
+git push -u <remote-name> <remote-address> // 第一次推送 master 加上 -u，还能起到本地和远程的 master 关联起来的作用，后续就无需加 -u，还能起到本地和远程的
 
 // 查看远程库
 git remote -v
 
 // 删除本地与远程库的关联
 git remote rm origin
+
+// 从远程库克隆
+git clone <remote-address>
+
+
+// 创建与合并分支
+git branch <branch-name> //创建分支
+git checkout <branch-name> //切换到分支
+git checkout -b <branch-name> //创建并切换到分支
+
+// 查看分支
+git branch
+
+
+
+
+
 
