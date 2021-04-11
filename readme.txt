@@ -7,4 +7,5 @@ git log --pretty=oneline  //查看历史记录的简洁
 git reset --hard HEAD^    //回退到上一个版本
 git reset --hard commit_id//回退到某个版本，commit_id  表示版本id，只需要前前面几位就好
 git reflog  //查看每一条记录，避免执行 reset 之后，想恢复原本最新的版本时，找不到版本号，而 git reflog 可以记录每一条操作
-git 
+// 工作区 -git add-> 版本库 stage 区 -git commit-> 版本库 master
+//版本控制
