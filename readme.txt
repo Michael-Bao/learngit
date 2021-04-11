@@ -38,7 +38,6 @@ git remote rm origin
 // 从远程库克隆
 git clone <remote-address>
 
-
 // 创建与合并分支
 git branch <branch-name> //创建分支
 git checkout <branch-name> //切换到分支
@@ -47,8 +46,16 @@ git checkout -b <branch-name> //创建并切换到分支
 // 查看分支
 git branch
 
+// 合并分支
+git merge dev
+// 合并模式：快进模式
 
+// 删除分支
+git branch -d <branch-name>
 
+// xx 版本的 git 开始可以通过 switch 创建和切换分支
+git switch <branch-name>    //切
+git switch -c <branch-name> //创并切
 
 
 
