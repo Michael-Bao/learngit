@@ -21,5 +21,17 @@ rm <file>
 删除文件后恢复
  - git checkout -- <file> 
 
+// 添加远程库
+git remote add origin git@github.com:Michael-Bao/learngit.git
+git remote add <remote-name> <remote-address> //添加远程仓库的地址
 
+// 推送到远程库
+git push -u origin master
+git push -u <remote-name> <remote-address> //由于远程库是空的，第一次推送 master 加上 -u，还能起到本地和远程的 master 关联起来的作用，后续就无需加 -u，还能起到本地和远程的
+
+// 查看远程库
+git remote -v
+
+// 删除本地与远程库的关联
+git remote rm origin
 
