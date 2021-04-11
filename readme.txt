@@ -57,7 +57,13 @@ git branch -d <branch-name>
 git switch <branch-name>    //切
 git switch -c <branch-name> //创并切
 
-//haha
-//master merge dev modify
+//解决冲突
+git merge <branch-name> //提示冲突并进入 master | merging 状态
+//修改文件
+git add . 
+git commit -m "解决冲突" //合并成功
+git log --graph --pretty=oneline --abbrev-commit //查看合并图；--pretty=oneline 展示更多；--abbrev-commit 缩写。
+
+//禁用 fast forward
 
 
