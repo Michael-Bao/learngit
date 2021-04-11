@@ -14,7 +14,12 @@ git checkout -- <file> //表示撤销修改,若没有 -- 就是切换到另一�
 
 git reset HEAD <file>  //把暂存区的修改回退到工作区
 
- 
+rm <file> 
+删除文件后再 git 将改文件删除
+ - git rm <file>
+ - git commit -m ""
+删除文件后恢复
+ - git checkout -- <file> 
 
 
 
