@@ -64,8 +64,26 @@ git add .
 git commit -m "解决冲突" //合并成功
 git log --graph --pretty=oneline --abbrev-commit //查看合并图；--pretty=oneline 展示更多；--abbrev-commit 缩写。
 
-//禁用 fast forward
-//  1
-//
+// git merge dev 合并分支，但通过 git log --graph 看不到曾经的分支
+git merge --no-ff -m "注释" <branch-name> //可以在 --graph 中看到曾经的分支
 
+// 远程分支
+// 1. 创建
+git push origin <本地分支>:<待创建远程分支>
+git push origin -u <本地分支>
+git push oriing --set-upstream <本地分支>
 
+// 2. 删除
+git push origin :<远程分支>
+git push origin --delete <远程分支>
+
+// 3. 拉取到本地
+git checkout -b
+
+git stash 
+git stash list 
+git stash pop
+git cherry-pick <commit-id> //将别的分支的某个提交复制过来，会产生一次性的提交
+
+还没合并就删除分支
+git branch -D <branch-name>
